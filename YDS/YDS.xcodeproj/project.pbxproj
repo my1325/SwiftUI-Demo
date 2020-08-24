@@ -12,6 +12,9 @@
 		00C0B75024DA544800C86E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C0B74F24DA544800C86E2A /* Assets.xcassets */; };
 		00C0B75324DA544800C86E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C0B75224DA544800C86E2A /* Preview Assets.xcassets */; };
 		00C0B75624DA544800C86E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C0B75424DA544800C86E2A /* LaunchScreen.storyboard */; };
+		00C0B76124DA5C6400C86E2A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0B76024DA5C6400C86E2A /* LoginView.swift */; };
+		00C0B76424DA5E0A00C86E2A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0B76324DA5E0A00C86E2A /* Constant.swift */; };
+		00C0B76824DA9BA100C86E2A /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0B76724DA9BA100C86E2A /* Color+Extention.swift */; };
 		00CA7FB66D20033BB71B910F /* Pods_YDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FCF26B446C2A1B05E8FDE4 /* Pods_YDS.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		00C0B75224DA544800C86E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00C0B75524DA544800C86E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C0B75724DA544800C86E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C0B76024DA5C6400C86E2A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		00C0B76324DA5E0A00C86E2A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		00C0B76724DA9BA100C86E2A /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
 		051E671A057422066D11BA07 /* Pods-YDS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDS.release.xcconfig"; path = "Target Support Files/Pods-YDS/Pods-YDS.release.xcconfig"; sourceTree = "<group>"; };
 		90FCF26B446C2A1B05E8FDE4 /* Pods_YDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EB84C3AC46372A035930CA /* Pods-YDS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDS.debug.xcconfig"; path = "Target Support Files/Pods-YDS/Pods-YDS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		00C0B74824DA544500C86E2A /* YDS */ = {
 			isa = PBXGroup;
 			children = (
+				00C0B76524DA9B8C00C86E2A /* Custom */,
+				00C0B76224DA5DF900C86E2A /* Define */,
 				00C0B75E24DA569300C86E2A /* Businesses */,
 				00C0B75D24DA567C00C86E2A /* ApplicationDelegate */,
 				00C0B74F24DA544800C86E2A /* Assets.xcassets */,
@@ -91,8 +99,41 @@
 		00C0B75E24DA569300C86E2A /* Businesses */ = {
 			isa = PBXGroup;
 			children = (
+				00C0B75F24DA5A5000C86E2A /* Login&Register */,
 			);
 			path = Businesses;
+			sourceTree = "<group>";
+		};
+		00C0B75F24DA5A5000C86E2A /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				00C0B76024DA5C6400C86E2A /* LoginView.swift */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		00C0B76224DA5DF900C86E2A /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				00C0B76324DA5E0A00C86E2A /* Constant.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		00C0B76524DA9B8C00C86E2A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				00C0B76624DA9B9100C86E2A /* Extension */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		00C0B76624DA9B9100C86E2A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00C0B76724DA9BA100C86E2A /* Color+Extention.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		26657A18CCDDD8CB3BCADD80 /* Pods */ = {
@@ -228,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C0B76124DA5C6400C86E2A /* LoginView.swift in Sources */,
+				00C0B76824DA9BA100C86E2A /* Color+Extention.swift in Sources */,
 				00C0B74A24DA544500C86E2A /* AppDelegate.swift in Sources */,
 				00C0B74C24DA544500C86E2A /* SceneDelegate.swift in Sources */,
+				00C0B76424DA5E0A00C86E2A /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
