@@ -16,9 +16,9 @@ struct LoginTextFeild<Label: View>: View {
         TextField("", text: $text)
     }
     
-    init(@ViewBuilder _ icon: () -> View, @ViewBuilder label: () -> View) {
-        <#statements#>
-    }
+//    init(@ViewBuilder _ icon: () -> View, @ViewBuilder label: () -> View) {
+//
+//    }
 }
 
 struct LoginView: View {
