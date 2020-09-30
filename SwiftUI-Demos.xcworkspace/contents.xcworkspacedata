@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Caculator/Caculator.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AnimationDemo/AnimationDemo.xcodeproj">
    </FileRef>
    <FileRef
